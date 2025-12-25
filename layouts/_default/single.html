@@ -1,0 +1,96 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div style="margin-top:-190px;border-radius: 5px;background:#fff;" class="container">
+      <div dir="rtl" class="row gap-y align-items-center">
+
+        <div class="col-md-6 text-md-right">
+          قفسه : <span class="badge badge-pale badge-success ">
+            {{ range (.GetTerms "categories") }}
+
+            <a class="nav-link  text-center font-weight-600" href={{ .Permalink }}>{{ .Name}}</a>
+
+            {{ end }}</span>
+          قیمت : <span class="badge badge-pale badge-success pb-3 lead-3 text-uppercase text-primary font-weight-600">
+            {{ .Params.price}}</span>
+          <h3 class="fw-600 mt-4">{{.Title}}</h3>
+          <br>
+          <p>{{ .Params.description }}</p><br>
+
+          <p><button type="button" class="btn btn-label btn-primary" data-toggle="modal" data-target="#modal-small">
+              <label><i class="fa fa-credit-card-alt"></i></label> خرید کتاب
+            </button></p>
+        </div>
+
+        <div class="col-md-5 mx-auto">
+          <img class="rounded-md" src={{ .Params.image }} alt={{.Title}}>
+        </div>
+        <div class="row gap-y">
+
+
+          <div class="col-md-4">
+            <h6>مشخصات کتاب</h6>
+            <p>
+            <table class="table table-striped">
+
+              <tbody>
+                <tr>
+                  <td>نویسنده</td>
+                  <td>{{ .Params.authors }}</td>
+                </tr>
+                <tr>
+                  <td>انتشارات</td>
+                  <td>{{ .Params.pub }}</td>
+                </tr>
+                <tr>
+                  <td>نوبت چاپ</td>
+                  <td>{{ .Params.numpub }}</td>
+                </tr>
+                <tr>
+                  <td>زبان</td>
+                  <td>{{ .Params.langu }}</td>
+                </tr>
+                <tr>
+                  <td>صفحه</td>
+                  <td>{{ .Params.page }}</td>
+                </tr>
+                <tr>
+                  <td>شابک</td>
+                  <td>{{ .Params.isbi }}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            </p>
+          </div>
+
+          <div class="col-md-7">
+            <h6>چکیده</h6>
+            <p>{{ .Content }}</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+</section>
+<!-- Modal - Small -->
+<div class="modal fade" id="modal-small" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div dir="rtl" class="modal-body text-right">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p><strong><mark>بانک سامان</mark></strong><br>
+          <br> <span class="badge badge-dot badge-primary"> </span> شبا : IR - 51 0560 6118 2800 5529 2863 01
+          <br> <span class="badge badge-dot badge-primary"> </span> کارت: 5711 4381 8619 6219
+        </p>
+        <p class="mb-0"><span class="badge badge-pale badge-primary">سیدجوادسجادی</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

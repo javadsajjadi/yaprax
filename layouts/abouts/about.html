@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div style="margin-top:-190px;border-radius: 5px;background:#fff;" class="container">
+      <div dir="rtl" style="margin:auto;padding-right:5%;
+    padding-left: 5%;" class="pt-5 row gap-y">
+
+
+        <div class="col-md-2 mr-md-auto">
+          <p class="lead-4 text-right">درباره </p>
+        </div>
+
+        <div class="col-md-7">
+          <h2>قلم من</h2>
+          <p>{{ .Content }}</p>
+        </div>
+
+        <div class="col-md-3">
+          <h6></h6>
+          <p><img class="img-thumbnail" src="/img/post/about.jpg" alt="..."></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

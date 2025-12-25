@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<!-- Main Content -->
+<main class="main-content">
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Populate the page
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+  <section class="section">
+    <div class="container">
+      <div
+        style="
+          margin-top: -190px;
+          padding-top: 20px;
+          border-radius: 5px;
+          background: #fff;
+        "
+      >
+        <blockquote class="blockquote font-weight-600">
+          <div>
+            <img class="avatar avatar-xl" src="/img/8080.jpg" alt="..." />
+          </div>
+          <footer dir="rtl">کتاب فروشی قلم من</footer>
+          <footer dir="rtl" style="margin-top: 1px">
+            مشاوره، طراحی و چاپ کتاب
+          </footer>
+        </blockquote>
+        <h6 class="divider w-50">موضوعات وبلاگ قلم من</h6>
+      </div>
+      <div style="margin: auto; padding-right: 10%; padding-left: 5%">
+        <div class="row gap-y">
+          {{ range .Paginator.Pages }}
+          <div class="col-md-6">
+            <a
+              class="card border border-light hover-shadow-9 px-4 py-2"
+              href="{{.Permalink}}"
+            >
+              <p class="mb-0 small-3 text-light">{{ .Params.authors }}</p>
+              <p class="mb-0">{{.Title}}</p>
+            </a>
+          </div>
+
+          {{ end }}
+        </div>
+
+        <nav>
+          <ul class="pagination justify-content-center mt-5">
+            {{ template "_internal/pagination.html" . }}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

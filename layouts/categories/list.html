@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+<!-- Main Content -->
+<main class="main-content">
+
+
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Populate the page
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+  <section class="section">
+    <div class="container">
+      <div style="margin-top:-190px;padding-top:20px;border-radius: 5px;background:#fff;">
+        <blockquote class="blockquote font-weight-600">
+          <div><img class="avatar avatar-xl" src="/img/8080.jpg" alt="..."></div>
+          <footer dir="rtl">کتاب فروشی قلم من </footer>
+          <footer dir="rtl" style="margin-top:1px;">مشاوره، طراحی و چاپ کتاب</footer>
+        </blockquote>
+        <h6 class="divider w-50">کتاب‌های چاپ شده
+          {{ range (.GetTerms "categories") }}
+
+          {{ .Name}}
+
+          {{ end }}
+        </h6>
+
+      </div>
+
+      <div dir="rtl" style="margin:auto;padding-right:5%;
+    padding-left: 5%;" class="row gap-y">
+
+        {{ range .Paginator.Pages }}
+        <div class="col-12 col-lg-4">
+          <div class="card text-white bg-img h-400" style="background-image: url({{ .Params.image }});"
+            data-overlay="6">
+            <div class="row h-100 p-5">
+              <div class="col-12">
+                <a class="text-white" href="#">تومان {{ .Params.price }} </a>
+              </div>
+
+              <div class="col-12 align-self-end">
+                <h6 class="card-title font-weight-600"><a href="{{.Permalink}}">{{.Title}}</a></h6>
+                <div dir="rtl" class="media align-items-center">
+                  <img class="avatar avatar-xs ml-3" src={{ .Params.image }} alt={{.Title}}>
+                  <div class="media-body">{{ .Params.authors }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{end}}
+      </div>
+
+      <nav>
+        <ul class="pagination justify-content-center">
+
+          {{ template "_internal/pagination.html" . }}
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+</main>
+{{ end }}

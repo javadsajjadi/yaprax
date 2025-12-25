@@ -3,6 +3,7 @@ date = '2025-12-24T23:25:22+03:30'
 draft = 'false'
 title = 'درباره'
 hidden = 'true'
+layout = 'about'
 +++
 
 

@@ -29,7 +29,7 @@
         <h6 class="divider w-50">موضوعات وبلاگ قلم من</h6>
       </div>
       <div style="margin: auto; padding-right: 10%; padding-left: 5%">
-        <div class="row gap-y">
+        <div dir="rtl" class="row gap-y">
           {{ range .Paginator.Pages }}
           <div class="col-md-6">
             <a
@@ -37,7 +37,8 @@
               href="{{.Permalink}}"
             >
               <p class="mb-0 small-3 text-light">{{ .Params.authors }}</p>
-              <p class="mb-0">{{.Title}}</p>
+              <h6 class="mb-0 font-weight-600">{{.Title}}</h6>
+              <p class="text-dark ">{{ .Params.description }}</p>
             </a>
           </div>
 

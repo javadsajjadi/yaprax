@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>سیدجوادسجادی on کتابفروشی قلم من</title>
+    <link>http://localhost:37623/authors/%D8%B3%DB%8C%D8%AF%D8%AC%D9%88%D8%A7%D8%AF%D8%B3%D8%AC%D8%A7%D8%AF%DB%8C/</link>
+    <description>Recent content in سیدجوادسجادی on کتابفروشی قلم من</description>
+    <generator>Hugo</generator>
+    <language>fa</language>
+    <lastBuildDate>Sun, 21 Dec 2025 23:25:22 +0330</lastBuildDate>
+    <atom:link href="http://localhost:37623/authors/%D8%B3%DB%8C%D8%AF%D8%AC%D9%88%D8%A7%D8%AF%D8%B3%D8%AC%D8%A7%D8%AF%DB%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>فێرکاری CSS ۳</title>
+      <link>http://localhost:37623/posts/my-css-post/</link>
+      <pubDate>Sun, 21 Dec 2025 23:25:22 +0330</pubDate>
+      <guid>http://localhost:37623/posts/my-css-post/</guid>
+      <description>&lt;p&gt;پێشەکی&lt;/p&gt;&#xA;&lt;p&gt;CSS بەکاردێت بۆ کۆنترۆڵکردنی شێوازی بەڵگەنامەی وێب بە شێوەیەکی سادە و ئاسان.&lt;/p&gt;&#xA;&lt;p&gt;CSS کورتکراوەی “Cascading Style Sheet”ە. ئەم پەرتوکە هەردوو وەشانی CSS1,CSS2 و CSS3 دەگرێتەوە، و تێگەیشتنێکی تەواو لە CSS دەدات، لە بنەماکانییەوە دەستپێدەکات تا چەمکە پێشکەوتووەکان.&lt;/p&gt;&#xA;&lt;p&gt;بۆچی فێری CSS بین؟&lt;/p&gt;&#xA;&lt;p&gt;Cascading Style Sheets کە بە کورتە بە CSS ناودەبرێت، زمانێکی دیزاینی سادەیە کە مەبەستی ئاسانکردنی پرۆسە کردنی لاپەڕەکانی وێب بە شێوەیەکی پێشکەشکارانەیە.&lt;/p&gt;&#xA;&lt;p&gt;CSS پێویستە بۆ خوێندکاران و پیشەییەکانی کارکەر بۆ ئەوەی ببنە ئەندازیارێکی نەرمەکاڵا، بە تایبەتی کاتێک لە باوشی گەشەپێدانی وێبدا کاردەکەن. هەندێک لە سوودە سەرەکییەکانی فێربوونی CSS بەمجۆرەیە:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

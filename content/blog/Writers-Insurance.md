@@ -9,6 +9,7 @@ categories = ""
 authors = ""
 avatar = "/img/q.jpg"
 hidden  = "true"
+jalali_date = "1404/06/19"
 +++
 
 #### 1- عضویت در سایت اهل قلم

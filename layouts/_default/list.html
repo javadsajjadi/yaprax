@@ -17,7 +17,12 @@
           <footer dir="rtl">کتاب فروشی قلم من </footer>
           <footer dir="rtl" style="margin-top:1px;">مشاوره، طراحی و چاپ کتاب</footer>
         </blockquote>
-        <h6 class="divider w-50">کتاب‌های چاپ شده</h6>
+        <h6 dir="rtl" class="divider">  کتاب‌های چاپ شده : {{ range .Site.Taxonomies.categories }}
+  <li class="category-item">
+    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+    <span class="count">({{ .Count }} کتاب)</span>
+  </li>  |
+{{ end }}</h6>
 
       </div>
 

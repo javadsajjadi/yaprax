@@ -9,6 +9,7 @@ categories = ""
 authors = ""
 avatar = "/img/q.jpg"
 hidden  = "true"
+jalali_date = "1404/09/30"
 +++
 
 #### خلاصه

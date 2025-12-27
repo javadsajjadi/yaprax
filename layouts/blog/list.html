@@ -36,9 +36,13 @@
               class="card border border-light hover-shadow-9 px-4 py-2"
               href="{{.Permalink}}"
             >
-              <p class="mb-0 small-3 text-light">{{ .Params.authors }}</p>
+              <p class="mb-0 small-3 text-light"></p>
               <h6 class="mb-0 font-weight-600">{{.Title}}</h6>
               <p class="text-dark ">{{ .Params.description }}</p>
+              <div class="post-meta" style="color: #999;">
+  <span>زمان مطالعه: {{ .ReadingTime }} دقیقه</span> | 
+  <span>تعداد کلمات: {{ .WordCount }}</span>
+</div>
             </a>
           </div>
 

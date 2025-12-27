@@ -10,6 +10,10 @@
           <div class="col-md-2"></div>
           <div class="col-md-8 ml-5 mr-5">
             <h3 class="fw-600 mt-4">{{.Title}}</h3>
+            <div class="post-meta" style="color: #999;">
+              <span>زمان مطالعه: {{ .ReadingTime }} دقیقه</span> | 
+              <span>تعداد کلمات: {{ .WordCount }}</span> | تاریخ : {{ .Params.jalali_date }} | دسته : <a href="/blog/">وبلاگ</a>
+            </div>
             <p>{{ .Content }}</p>
           </div>
           <div class="col-md-2"></div>
@@ -21,4 +25,3 @@
 </section>
 
 {{ end }}
-

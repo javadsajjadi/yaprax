@@ -36,3 +36,6 @@ Copy
     width: 100% !important;
  }
 }
+.badge-glass.badge-dark {
+    font-size: medium;
+}

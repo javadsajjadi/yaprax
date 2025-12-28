@@ -17,7 +17,7 @@
           <footer dir="rtl">کتاب فروشی قلم من </footer>
           <footer dir="rtl" style="margin-top:1px;">مشاوره، طراحی و چاپ کتاب</footer>
         </blockquote>
-        <h6 dir="rtl" class="divider">  کتاب‌های چاپ شده : {{ range .Site.Taxonomies.categories }}
+        <h6 dir="rtl" class="divider">  کتاب‌های چاپ شده : {{ range .Site.Taxonomies.categories }} 
   <li class="category-item">
     <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
     <span class="count">({{ .Count }} کتاب)</span>
@@ -37,7 +37,7 @@
             data-overlay="8">
             <div class="row h-100 p-5">
               <div class="col-12">
-                <a class="text-white" href="#">تومان {{ .Params.price }} </a>
+                <a class="text-white" href="#"><span class="badge badge-glass badge-dark">{{ .Params.price }}</span>  </a>
               </div>
 
               <div class="col-12 align-self-end">

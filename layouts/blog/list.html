@@ -25,8 +25,9 @@
           <footer dir="rtl" style="margin-top: 1px">
             مشاوره، طراحی و چاپ کتاب
           </footer>
-        </blockquote>
-        <h6 class="divider w-50">موضوعات وبلاگ قلم من</h6>
+        </blockquote>{{ $files := readDir "content/blog/" }}
+{{ $count := len $files }}
+        <h6 class="divider w-50">موضوعات وبلاگ : {{ $count }} نوشته </h6>
       </div>
       <div style="margin: auto; padding-right: 10%; padding-left: 5%">
         <div dir="rtl" class="row gap-y">

@@ -38,12 +38,12 @@
                 <tr>
                   <td>نویسنده</td>
                   <td>{{ .Params.authors }}</td>
-                </tr>
+                </tr>{{ if and .Params.editor (ne .Params.editor "") }}
                 <tr>
                   <tr>
                   <td>ویراستار</td>
                   <td>{{ .Params.editor }}</td>
-                </tr>
+                </tr>{{ end}}
                   <td>انتشارات</td>
                   <td>{{ .Params.pub }}</td>
                 </tr>

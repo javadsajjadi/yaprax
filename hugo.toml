@@ -15,4 +15,7 @@ pagerSize = 6
     category = "categories"
     tag = "tags"
     author = "authors"
-   
+# counter analytics: see https://counter.dev/setup.html
+[counter]
+enable = false
+username = ""  # your username   
